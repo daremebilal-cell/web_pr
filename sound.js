@@ -1,6 +1,7 @@
 function playSound(num) {
             const audio = document.getElementById('s' + num);
             if (!audio) return;
+            audio.currentTime = 0; 
             audio.play().catch(e => alert('Error: ' + e.message));
         }
 
