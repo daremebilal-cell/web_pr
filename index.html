@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound creator</title>
+    <link rel="stylesheet" href="sound.css">
+</head>
+<body>
+    <main>
+        <h1>Sound creator</h1>
+        <p>Use the buttons below to create different sounds.</p>
+        <div class="buttons">
+            <button data-key="65" class="sound-button" onclick="playSound(1)">Sound 1</button>
+            <button data-key="66" class="sound-button" onclick="playSound(2)">Sound 2</button>
+            <button data-key="67" class="sound-button" onclick="playSound(3)">Sound 3</button>
+            <button data-key="68" class="sound-button" onclick="playSound(4)">Sound 4</button>
+            <button data-key="69" class="sound-button" onclick="playSound(5)">Sound 5</button>
+            <button data-key="70" class="sound-button" onclick="playSound(6)">Sound 6</button>
+            <button data-key="71" class="sound-button" onclick="playSound(7)">Sound 7</button>
+            <button data-key="72" class="sound-button" onclick="playSound(8)">Sound 8</button>
+        </div>
+
+        <audio data-key="65" id="s1" src="sounds/clap.mp3"></audio>
+        <audio id="s2" src="sounds/deep-kick.mp3"></audio>
+        <audio id="s3" src="sounds/hihat-7.mp3"></audio>
+        <audio id="s4" src="sounds/open-hat.mp3"></audio>
+        <audio id="s5" src="sounds/van_snare.mp3"></audio>
+        <audio id="s6" src="sounds/ride.mp3"></audio>
+        <audio id="s7" src="sounds/snare_drum.mp3"></audio>
+        <audio id="s8" src="sounds/tom1.mp3"></audio>
+
+        <script src="sound.js"></script>
+    </main>
+</body>
+</html>
